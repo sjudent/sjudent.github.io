@@ -1,0 +1,406 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="see-photos.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="See photos" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="nelly_icon.ico">
+        <title>Nelly's Photo Booth</title>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  <script>
+    function copyemail() {
+  var copyText = document.getElementById("copyemail");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+  // Alert the copied text
+  alert("Copied!");
+}
+  </script>
+
+  </head>
+  <body>
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-white">Nelly was born some time in November, 2019 and his breed is domestic short hair.<br>
+            He was found with an infection in his right eye which had to be removed.<br>
+            Even with only one eye, he is still a very handsome and beautiful cat.</p>
+          <p class="text-white">Nelly was adopted from the SPCA at the beginning of 2021.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Do you love Nelly?</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.instagram.com/one_eyed_nelly/" class="text-white">Follow on instagram</a></li>
+          </ul>
+          <h4 class="text-white">Become Nelly's treat sponsor!</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=bc1qxg5rfr9flrr50e4773pasl6g9846fr24l25qad" target=”_blank” class="text-white">Donate Bitcoin</a></li>
+            <li><a href="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=0x56280a717E1fBE0F698A2Ae139299211B7C02a8f" target=”_blank” class="text-white">Donate Ethereum</a></li>
+            <li class="text-white">Donate Paypal email:</li>
+            <li><input type="text" value="sjudent@hotmail.com" id="copyemail" readonly><button onclick="copyemail()">Copy</button></li>
+          </ul>
+          <div>
+            <a href="index.html" class="text-white">Back to main page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container ">
+      <a class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Nelly's Photo Booth</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"><b>Browse Nelly's Photo Booth</b></h1>
+        <p class="lead"><b>Each photo is sold individually at extremely high prices!</b></p>
+        <p class="lead"><b>You can right-click the image and save it to your desktop for free but why do that when you can just burn your hard-earned cash?</b></p>
+        <p class="lead"><b>Just swipe that credit card!</b></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top gallery" width="100%" height="225">
+              <defs>
+                <clipPath id="photo1">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo1.jpg" clip-path="url(#photo1)"/>
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is Nelly sleeing on the couch. Look how comfortable he looks!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo1.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo2">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo2.jpg" clip-path="url(#photo2)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">This is Nelly sleeping on his little cat bed. That bed looks so soft...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo2.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo3">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo3.jpg" clip-path="url(#photo3)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">Rare photo of a King looking down at his servants from his tower (circa 1860).</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo3.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo4">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo4.jpg" clip-path="url(#photo4)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">Magic mirror on the wall, who's the fairest one of all?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo4.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo5">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo5.jpg" clip-path="url(#photo5)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">Nelly checking the fridge for treats.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo5.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo6">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo6.jpg" clip-path="url(#photo6)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">Sleeping under the warm sunlight without a care in the world.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo6.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo7">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo7.jpg" clip-path="url(#photo7)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">Nelly has claimed his servant's pillow. The servant shall sleep without one.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo7.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo8">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo8.jpg" clip-path="url(#photo8)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">When the tracking says "With courier for delivery".</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo8.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225">
+              <defs>
+                <clipPath id="photo9">
+                   <rect width="100%" height="225"/>
+                </clipPath>
+             </defs>
+             <image width="100%" height="225" href="photo9.jpg" clip-path="url(#photo9)" />
+            </svg>
+
+            <div class="card-body">
+              <p class="card-text">When he's had enough of your s#@%.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="checkout.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Purchase</button>
+                  </a>
+                  <a href="photo9.jpg" target=”_blank”>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View Full Size Image</button>
+                  </a>
+                </div>
+                <small class="text-muted">$99</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Thank you for visiting Nelly's Photo Booth.</p>
+    <p class="mb-0">More photos will be added in the future.</p>
+    <p class="mb-0">Special thanks to <a href="https://getbootstrap.com/docs/4.0/examples/">Bootstrap</a> for their website templates.</p>
+  </div>
+</footer>
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
